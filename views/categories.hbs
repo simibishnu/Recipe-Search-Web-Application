@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{title}}</title>
+        <link rel="stylesheet" type="text/css" href="styles/categories.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:wght@500">
+    </head>
+    <body>
+        <div id="home-logout-register-div">
+            <button type="submit" id="homeButton">&#8962;</button>
+            <button type="submit" class="logout-register-btn" id="registerButton">Register</button>
+            <button type="submit" class="logout-register-btn" id="logOutButton">Log Out</button>
+        </div>
+        <h1>{{title}}</h1>
+        {{#each categories}}
+            <div class="categoryDiv">
+                <button type="submit"class="categoryButton" id={{this.strCategory}}Button">{{this.strCategory}}</button>
+                <img src="{{this.strCategoryThumb}}"> 
+            </div>
+        {{/each}}
+        <script src="js/categoriesPage.js"></script>
+        <script src="js/handlers/categoriesPageHandlers.js"></script>
+        <script src="js/handlers/generalHandlers.js"></script>
+        
+    </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{title}}</title>
+        <link rel="stylesheet" type="text/css" href="/styles/guest.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:wght@500">
+        <link rel="styleshseet" href="styles/icons/boxicons.css">
+    </head>
+    
+    <body>
+        <div id="home-logout-register-div">
+            <button type="submit" id="homeButton">&#8962;</button>
+            <button type="submit" class="logout-register-btn" id="registerButton">Register</button>
+            <button type="submit" class="logout-register-btn" id="logOutButton">Log Out</button>
+        </div>
+        
+        <h1>Welcome {{username}}!</h1>
+
+        <h2>Search Meal By Name</h2>
+
+        <div id="meal-search-div">
+            <input type="text" id="searchRecipeBar" placeholder="Search">
+            <div id="search-btn-div">
+                <button type="submit" id="searchRecipeButton">{{!--&#x1F50D;--}}</button>
+                <box-icon name='search'></box-icon>
+            </div>
+        </div>
+
+        <h2>Browse by:</h2>
+
+        <div id="options-div">
+            <div class="options-btn-div">
+                <button type="submit" class="options-btn" id="likedRecipesButton"> My Liked Recipes </button>
+                <box-icon type='solid' name='heart-circle'></box-icon>
+            </div>
+            
+            <div class="options-btn-div"> 
+                <button type="submit" class="options-btn" id="reviewsButton"> My Reviews</button>
+                <box-icon type='solid' name='pencil'></box-icon>
+            </div>
+
+            <div class="options-btn-div">
+                <button type="submit" class="options-btn" id="categoryButton">Recipes by Category</button>
+                <box-icon type='solid' name='cookie'></box-icon>
+            </div>
+
+            <div class="options-btn-div">
+                <button type="submit" class="options-btn" id="countryButton">Recipes by Country</button>
+                <box-icon type='solid' name='flag-alt'></box-icon>
+            </div>
+            
+            
+            
+        </div>
+        
+        <script src="js/handlers/guestPageHandlers.js"></script>
+        <script src="js/handlers/generalHandlers.js"></script>
+        <script src="js/guestPage.js"></script>
+        <script src="js/dist/boxicons.js" text="text/js"></script>
+        
+        
+    </body>

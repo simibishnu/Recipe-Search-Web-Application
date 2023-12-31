@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<head>
+    <title>{{title}}</title>
+</head>
+
+<body>
+    <div id="home-logout-register-div">
+            <button type="submit" id="homeButton">&#8962;</button>
+            <button type="submit" class="logout-register-btn" id="registerButton">Register</button>
+            <button type="submit" class="logout-register-btn" id="logOutButton">Log Out</button>
+    </div>
+    <h1>{{title}}</h1>
+    <h1>{{count}} Results</h1>
+    {{#each recipes}}
+        <h2>{{this.strMeal}}</h2>
+        <img src="{{this.strMealThumb}}">
+    {{/each}}
+
+    <script></script>
+</body>

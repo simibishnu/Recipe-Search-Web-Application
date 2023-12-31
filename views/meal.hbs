@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{title}}</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:wght@500">
+        <link rel="stylesheet" href="styles/icons/boxicons.css">
+        <link rel="stylesheet" href="styles/mealPage.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    </head>
+    <body>
+        <div id="home-logout-register-div">
+            <button type="submit" id="homeButton">&#8962;</button>
+            <button type="submit" class="logout-register-btn" id="registerButton">Register</button>
+            <button type="submit" class="logout-register-btn" id="logOutButton">Log Out</button>
+        </div>
+        <h1 id="mealName">{{title}}</h1>
+        <img src={{image}}>
+        <div class="recipeDiv">
+            <p>Ingredients</p>
+            <ul>
+                {{#each ingredients}}
+                    <li>{{this.ingredient}}</li>
+                {{/each}}
+            </ul>
+            <p>Instructions</p>
+            <ol>
+                {{#each instructions}}
+                    <li>{{this.instruction}}</li>
+                {{/each}}
+            </ol>
+        </div>
+        
+        
+            <div class="userReviewDiv">
+                <div class="review-input-box">
+                    <input type="text" id="reviewInputBar" placeholder="Add a Review">
+                    <button type="submit" id="addReviewButton">Submit</button>
+                </div>
+                <button type="submit" id="likeButton" class="{{#if liked}}filled{{/if}}">
+                    &#x2764;
+                </button>
+            </div>
+
+        <div id="reviews-box">
+            <p>Reviews:</p>
+            {{#each reviews}}
+                <div class="reviewDiv">
+                    <p id="review">{{this.username}}: {{this.review}}</p>
+                   
+                </div>
+            {{/each}}
+        </div>
+        <script src="js/dist/boxicons.js" text="text/javascript"></script>
+        <script src="js/handlers/mealPageHandlers.js"></script>
+        <script src="js/handlers/generalHandlers.js"></script>
+        <script src="js/mealPage.js"></script>
+        
+    </body>
+</html>

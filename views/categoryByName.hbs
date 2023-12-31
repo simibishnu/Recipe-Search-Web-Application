@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{title}}</title>
+        <link rel="stylesheet" type="text/css" href="styles/categoryByName.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:wght@500">
+    </head>
+    <body>
+        <div id="home-logout-register-div">
+            <button type="submit" id="homeButton">&#8962;</button>
+            <button type="submit" class="logout-register-btn" id="registerButton">Register</button>
+            <button type="submit" class="logout-register-btn" id="logOutButton">Log Out</button>
+        </div>
+        <h1>{{title}}</h1>
+
+        
+        <h1>{{count}} Results</h1>
+        
+        {{#each meals}}
+            <div class="mealDiv">
+                <p>{{this.strMeal}}</p>
+                <input type="image" id="{{this.strMeal}}Button" src="{{this.strMealThumb}}" alt="{{this.strMeal}}" class="mealButton">
+                
+                {{!--<button class="mealButton" id="{{this.strMeal}}Button" image="{{this.strMealThumb}}"></button>}}
+                {{!--<img src="{{this.strMealThumb}}">--}}
+
+
+                {{!--<button class="mealButton" id="{{this.strMeal}}Button">{{this.strMeal}}</button>--}}
+                
+                {{!--<button class="categoryButton" id="{{this.strCategory}}Button" img="{{this.strCategoryThumb}}"></button>--}}
+            </div>
+            
+        {{/each}}
+
+        <script src="js/handlers/categoryByNameHandlers.js"></script>
+        <script src="js/categoryByName.js"></script>
+        <script src="js/handlers/generalHandlers.js"></script>
+    </body>
+</html>

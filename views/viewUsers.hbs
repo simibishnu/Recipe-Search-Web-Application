@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{title}}</title>
+        <link rel="stylesheet" href="styles/viewUsers.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:wght@500">
+    </head>
+    <body>
+        <div id="home-logout-register-div">
+            <button type="submit" id="homeButton">&#8962;</button>
+            <button type="submit" class="logout-register-btn" id="registerButton">Register</button>
+            <button type="submit" class="logout-register-btn" id="logOutButton">Log Out</button>
+        </div>
+        <h1>The current users:</h1>
+        <div class="users-box">
+            {{#each users}}
+            <p>{{this.username}}</p>
+            {{/each}}
+        </div>
+        <script src="js/handlers/viewUsersPageHandlers.js"></script>
+        <script src="js/handlers/generalHandlers.js"></script>
+    </body>
+</html>

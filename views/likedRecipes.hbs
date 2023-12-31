@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{header}}</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:wght@500">
+        <link rel="stylesheet" href="styles/likedRecipes.css">
+    </head>
+    <body>
+        <div id="home-logout-register-div">
+            <button type="submit" id="homeButton">&#8962;</button>
+            <button type="submit" class="logout-register-btn" id="registerButton">Register</button>
+            <button type="submit" class="logout-register-btn" id="logOutButton">Log Out</button>
+        </div>
+        <h1>{{header}}</h1>
+        {{#if empty}}
+            You haven't liked any recipes yet.
+        {{/if}}
+        <div id="options-div">
+            {{#each recipes}}
+                <div class="likeDiv">
+                    <button type="submit" class="mealButton" id={{this.mealName}}Button">{{this.mealName}}</button>
+                </div>
+            {{/each}}
+        </div>
+        
+        
+        <script src="js/handlers/likedRecipesHandlers.js"></script>
+        <script src="js/likedRecipes.js"></script>
+        <script src="js/handlers/generalHandlers.js"></script>
+        
+    </body>
+</html>

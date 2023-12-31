@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, serif;
+}
+
+body{
+    
+    background-color: rgb(224,238,198)
+}
+
+h1{
+    margin-top:20px;
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: rgb(36,62,54);
+}
+
+h2{
+    text-align: center;
+    color:rgb(90, 144, 90);
+    margin-bottom:10px;
+}
+
+#home-logout-register-div{
+    text-align: right;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+#home-logout-register-div .logout-register-btn{
+    width:100px;
+    height: 35px;
+    border-radius: 40px;
+    background-color: rgb(43, 129, 66);
+    cursor: pointer;
+    margin-right: 10px;
+    color: white;
+    border: 2px solid rgb(16, 79, 51);
+}
+
+#home-logout-register-div .logout-register-btn:hover{
+    background-color:rgb(12, 64, 42);
+}
+
+#home-logout-register-div #homeButton{
+    width:40px;
+    height:40px;
+    border-radius: 40px;
+    margin-right: 10px;
+    background-color: rgb(43, 129, 66);
+    cursor: pointer;
+    margin-right: 10px;
+    color: white;
+    border: 2px solid rgb(16, 79, 51);
+}
+
+#home-logout-register-div #homeButton:hover{
+    background-color:rgb(12, 64, 42);
+}
+
+.users-box {
+    background-color: rgb(211, 233, 217);
+    border: 2px solid rgb(36, 62, 54);
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.users-box p {
+    font-size: 16px;
+    color: rgb(36, 62, 54);
+    margin-bottom: 10px;
+    padding: 5px;
+    font-weight:bold;
+}
+
