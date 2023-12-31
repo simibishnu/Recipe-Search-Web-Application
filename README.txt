@@ -1,4 +1,5 @@
-NAME: SIMI BISHNU 101264827
+PURPOSE: A simple website that allows users to browse recipes using TheMealDB public API
+
 INSTALL INSTRUCTIONS: npm install
 LAUNCH INSTRUCTIONS: node server.js
 TESTING INSTRUCTIONS:
